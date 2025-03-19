@@ -34,7 +34,7 @@ st.sidebar.write("🔍 Select an analysis to explore the dataset.")
 @st.cache_data
 def load_data():
     try:
-        file_path = "/content/amazon.csv"
+        file_path = "/amazon.csv"
         df = pd.read_csv(file_path)
 
         # Data Cleaning
