@@ -10,7 +10,7 @@ import os
 import sys
 import pyarrow as pa
 import warnings
-
+'''
 # Suppress specific warnings related to missing ScriptRunContext
 warnings.filterwarnings("ignore", message=".*missing ScriptRunContext.*")
 
@@ -22,7 +22,7 @@ venv_path = os.path.join(os.getcwd(), ".venv", "Scripts", "python.exe")
 if sys.executable != venv_path:
     st.error("⚠️ Please activate the virtual environment before running the script.")
     st.stop()
-
+'''
 # Streamlit Page Config
 st.set_page_config(page_title="Amazon Data Analysis", layout="wide")
 
