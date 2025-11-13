@@ -19,9 +19,9 @@ warnings.filterwarnings("ignore", category=RuntimeWarning, message="More than 20
 
 # Ensure the virtual environment is activated
 # venv_path = os.path.join(os.getcwd(), ".venv", "Scripts", "python.exe")
-if sys.executable != venv_path:
-    st.error("⚠️ Please activate the virtual environment before running the script.")
-    st.stop()
+#if sys.executable != venv_path:
+ #   st.error("⚠️ Please activate the virtual environment before running the script.")
+  #  st.stop()
 
 # Streamlit Page Config
 st.set_page_config(page_title="Amazon Data Analysis", layout="wide")
@@ -160,4 +160,5 @@ if df is not None:
         st.write("Arrow conversion successful.")
     except Exception as e:
         st.error(f"⚠️ Arrow conversion error: {e}")
+
 
