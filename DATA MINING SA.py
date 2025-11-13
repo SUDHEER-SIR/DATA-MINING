@@ -34,7 +34,7 @@ st.sidebar.write("🔍 Select an analysis to explore the dataset.")
 @st.cache_data
 def load_data():
     try:
-        file_path = "/amazon.csv"
+        file_path = "amazon.csv"
         df = pd.read_csv(file_path)
 
         # Data Cleaning
@@ -160,5 +160,6 @@ if df is not None:
         st.write("Arrow conversion successful.")
     except Exception as e:
         st.error(f"⚠️ Arrow conversion error: {e}")
+
 
 
