@@ -6,7 +6,7 @@ import seaborn as sns
 from sklearn.cluster import KMeans
 from mlxtend.frequent_patterns import apriori, association_rules
 from sklearn.preprocessing import StandardScaler
-import os
+# import os
 import sys
 import pyarrow as pa
 import warnings
@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore", message=".*missing ScriptRunContext.*")
 warnings.filterwarnings("ignore", category=RuntimeWarning, message="More than 20 figures have been opened.*")
 
 # Ensure the virtual environment is activated
-venv_path = os.path.join(os.getcwd(), ".venv", "Scripts", "python.exe")
+# venv_path = os.path.join(os.getcwd(), ".venv", "Scripts", "python.exe")
 if sys.executable != venv_path:
     st.error("⚠️ Please activate the virtual environment before running the script.")
     st.stop()
@@ -160,3 +160,4 @@ if df is not None:
         st.write("Arrow conversion successful.")
     except Exception as e:
         st.error(f"⚠️ Arrow conversion error: {e}")
+
